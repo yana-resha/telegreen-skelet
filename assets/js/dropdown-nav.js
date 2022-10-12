@@ -10,30 +10,35 @@ li.forEach(el => {
   
   el.addEventListener('click', (e) => {
     const button = el.querySelector('.btn-list');
-    
+    const drop = el.querySelector('.nav-dropdown');
+    if (button) {
 
-   
-      const drop = el.querySelector('.nav-dropdown');
-      if (button) {
-        button.classList.toggle('active');
-        drop.classList.toggle('nav-dropdown-active');
-        drop.addEventListener('click', (e) => {
-          e.stopPropagation();
-          drop.classList.add('nav-dropdown-active');
-        })
-      }
-      if (!button) {
-        allDropdown.forEach(el => {
-         el.classList.remove('nav-dropdown-active')
-        })
-      }
-
-      allActiveButton.forEach(el => {
-        if (el !== button && el.classList.contains('active')) {
-          el.classList.remove('active')
-          
+      allDropdown.forEach(el => {
+        if (el !== drop) {
+          el.classList.remove('nav-dropdown-active')
         }
       })
+
+      button.classList.toggle('active');
+      drop.classList.toggle('nav-dropdown-active');
+        
+
+      drop.addEventListener('click', (e) => {
+        e.stopPropagation();
+        drop.classList.add('nav-dropdown-active');
+      })
+    }
+    if (!button) {
+      allDropdown.forEach(el => {
+       el.classList.remove('nav-dropdown-active')
+      })
+    }
+    allActiveButton.forEach(el => {
+      if (el !== button && el.classList.contains('active')) {
+        el.classList.remove('active')
+        
+      }
+    })
       
 
     
