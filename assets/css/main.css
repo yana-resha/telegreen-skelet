@@ -1036,6 +1036,8 @@ header {
 .footer-middle-block {
   display: flex;
   justify-content: center;
+  align-content: center;
+
 }
 
 .footer__middle-block-list-part {
