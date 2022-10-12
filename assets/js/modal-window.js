@@ -1,30 +1,34 @@
-const callbackBtn = document.querySelector('.header-callback');
+const callbackBtns =  Array.from(document.querySelectorAll('.callback'));
 let modalBackground = document.querySelector('.modal-window');
 let modalContent = document.querySelector('.modal-content');
 const modalForm = document.querySelector('.modal-window__form')
 
-callbackBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  modalBackground.classList.add('modal-window-opacity');
 
-  document.addEventListener('click', (e) => {
-
-  })
-
-  modalBackground.addEventListener('click', (e) => {
-    if (e.target === modalBackground) {
-      modalBackground.classList.remove('modal-window-opacity');
-    }
-  })
-
-  modalForm.addEventListener('submit', (e) => {
+callbackBtns.forEach(callbackBtn => {
+  callbackBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    modalBackground.classList.remove('modal-window-opacity');
-    alert('Отправлено!')
+    modalBackground.classList.add('modal-window-opacity');
+  
+    document.addEventListener('click', (e) => {
+  
+    })
+  
+    modalBackground.addEventListener('click', (e) => {
+      if (e.target === modalBackground) {
+        modalBackground.classList.remove('modal-window-opacity');
+      }
+    })
+  
+    modalForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      modalBackground.classList.remove('modal-window-opacity');
+      alert('Отправлено!')
+    })
+  
+  
   })
-
-
 })
+
 
 
 // btn.forEach(el => {

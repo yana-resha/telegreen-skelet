@@ -46,8 +46,8 @@ li.forEach(el => {
 })
 
 
-buttonCategory.addEventListener('click', () => {
-  buttonCategory.classList.toggle('active')
-  categoryList.classList.toggle('category-list-open');
-})
+// buttonCategory.addEventListener('click', () => {
+//   buttonCategory.classList.toggle('active')
+//   categoryList.classList.toggle('category-list-open');
+// })
 
