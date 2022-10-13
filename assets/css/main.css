@@ -690,7 +690,6 @@ header {
 
 .advanteges__img-container {
   height: 100px;
-  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -988,6 +987,11 @@ header {
   padding: 0;
   line-height: 30px;
   font-weight: 600;
+}
+
+.callback-section__our-contacts a{
+  display: inline-block;
+  margin-right: 15px;
 }
 
 /* footer */

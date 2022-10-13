@@ -1,0 +1,26 @@
+.buyers {
+  background-color: white;
+  padding-top: 180px;
+  padding-bottom: 80px;
+}
+
+.buyers__main-title {
+  margin-bottom: 50px;
+}
+
+.buyers__list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+
+.buyers__list-link {
+  color: blue;
+}
+
+.buyers-container div:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.buyers__attention-block {
+  font-weight: 600;
+}

@@ -1,0 +1,33 @@
+.faq {
+  padding-top: 160px;
+  padding-bottom: 50px;
+  background-color: white;
+}
+
+.faq__title {
+  margin-bottom: 50px;
+}
+
+
+.faq__container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  border-top: 1px solid gray;
+}
+
+.faq__block-description p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.faq__block-description {
+  border-right: 1px solid gray;
+  padding-top: 50px;
+  padding-right: 30px;
+}
+
+.faq__faq_accordion-block {
+  padding-top: 50px;
+  padding-left: 30px;
+}
