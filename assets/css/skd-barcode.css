@@ -1,0 +1,216 @@
+.skd-part {
+  background-color: white;
+  padding-top: 160px;
+  padding-bottom: 80px;
+}
+
+
+.skd-part__title {
+  margin-bottom: 30px;
+}
+
+.skd-part__description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.skd-part__part-description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.part-bold {
+  font-weight: 600;
+}
+
+.skd-part__title-middle {
+  margin-bottom: 30px;
+}
+
+.skd-part__application-list {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.skd-part__application-list li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.skd-part__application-list-block {
+  display: flex;
+  flex-direction: row;
+}
+
+.skd-part__block-with-image-text {
+  width: 65%;
+}
+
+.skd-part__whitch-list {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-row-gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.skd-part__whitch-list-part {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.skd-part__whitch-list-part {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.skd-part__whitch-list-part i {
+  font-size: 46px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.skd-part__whitch-list-part-title {
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skd-part__advantage-list {
+  display: grid;
+  grid-template-columns: repeat(6, 15%);
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.skd-part__advantage-list-part {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #CCCCFF;
+}
+
+
+.skd-part__advantage-list-part i {
+  margin-bottom: 20px;
+  font-size: 46px;
+}
+
+.skd-part__whitch-list-part-description {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+.skd-part__catalog-list {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  justify-content: space-between;
+  grid-row-gap: 30px;
+  margin-bottom: 50px;
+}
+
+
+.skd-part__list-part-content img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.skd-part__catalog-list-part {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.skd-part__swiper-container {
+  margin-bottom: 50px;
+}
+
+.skd-part__list-part-content {
+  position: relative;
+  height: 250px;
+}
+
+.M5::after {
+  content: 'Контроллер - считыватель Telegreen M5';
+}
+
+.M6::after {
+  content: 'Контроллер - считыватель Telegreen M6';
+}
+
+.M4::after {
+  content: 'Контроллер - считыватель Telegreen M4';
+}
+
+.M3::after {
+  content: 'Контроллер - считыватель Telegreen M3';
+}
+
+.M2::after {
+  content: 'Контроллер - считыватель Telegreen M2';
+}
+
+.M1::after {
+  content: 'Контроллер - считыватель Telegreen M1';
+}
+
+
+.skd-part__list-part-content::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 16px;
+ 
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  vertical-align: middle;
+  flex-direction: column;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.skd-part__list-part-content:hover::after,
+.skd-part__list-part-content:focus-visible::after {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.skd-part__list-part-content:active::after {
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+
+.skd-part__list-part-content-btn {
+  position: absolute;
+  bottom: 20px;
+  width: 50%;
+  padding-bottom: 10px;
+  z-index: 200;
+  left: calc((100% - 50%) / 2);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  background-color: transparent;
+
+}
+
+
+.skd-part__category-list  {
+  margin-left: 65px;
+  margin-right: 65px;
+}

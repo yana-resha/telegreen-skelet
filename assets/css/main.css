@@ -39,6 +39,9 @@ body {
 .title {
   padding: 0;
   margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  
 }
 
 .main-title {
@@ -956,6 +959,7 @@ header {
 }
 
 .callback-section__btn-submit {
+ cursor: pointer;
   width: 30%;
   color: white;
   font-weight: 600;
@@ -1168,3 +1172,6 @@ header {
   flex-direction: column;
   width: 100%;
 }
+
+
+
