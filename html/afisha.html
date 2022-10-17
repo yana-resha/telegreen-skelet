@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/biteltnaya-systema.css">
   <link rel="stylesheet" href="../assets/css/buyers.css">
-  <link rel="stylesheet" href="../assets/css/vacation.css">
+  <link rel="stylesheet" href="../assets/css/faq.css">
+  <link rel="stylesheet" href="../assets/css/afisha.css">
   <title>Платформа для продажи билетов и ....</title>
 </head>
 <body>
@@ -147,7 +148,7 @@
               <a class="nav-btn link">Портфолио</a>
             </li>
             <li class="nav-list-part">
-              <a href="./afisha.html" class="nav-btn link">Афиша</a>
+              <a class="nav-btn link">Афиша</a>
             </li>
             <li class="nav-list-part">
               <a href="./faq.html" class="nav-btn link">FAQ</a>
@@ -161,85 +162,20 @@
     </div>
   </header>
   <main>
-    <section class="vacation">
+    <section class="afisha">
       <div class="container">
-        <h1 class="main-title vacation__title">
-          Карьера в компании TeleGreen
+        <h1 class="main-title afisha-title">
+          Афиша
         </h1>
-        <p class="vacation__description">
-          Приходите работать в компанию TeleGreen, где молодые профессионалы создают инновационные IT-решения!
-        </p>
-        <div class="vacation__block-vacation">
-          <h2 class="vacation__title-list title">
-            Вакансии на сегодня
-          </h2>
-          <ul class="vacation__list list-no-marker">
-            <li class="vacation__list-part">
-              <div class="vacation__img-container">
-                <img src="../assets/img/vacation-img.jpg">
-              </div>
-              <div class="vacation__list-part-content">
-                <h3 class="vavation__list-vacation-name">lorem lorem</h3>
-                <ul class="vacation__list-conditions list-no-marker">
-                  <li><i class="fa fa-briefcase" aria-hidden="true"></i>Полный рабочий день, в офисе</li>
-                  <li><i class="fa fa-money" aria-hidden="true"></i> По итогам собеседования</li>
-                </ul>
-              </div>
-              <a class="link vacation-link" href="mailto:info@telegreen.ru">Отправить резюме</a>
-            </li>
-            <li class="vacation__list-part">
-              <div class="vacation__img-container">
-                <img src="../assets/img/vacation-img.jpg">
-              </div>
-              <div class="vacation__list-part-content">
-                <h3 class="vavation__list-vacation-name">lorem lorem</h3>
-                <ul class="vacation__list-conditions list-no-marker">
-                  <li><i class="fa fa-briefcase" aria-hidden="true"></i>Полный рабочий день, в офисе</li>
-                  <li><i class="fa fa-money" aria-hidden="true"></i> По итогам собеседования</li>
-                </ul>
-              </div>
-              <a class="link vacation-link" href="mailto:info@telegreen.ru">Отправить резюме</a>
-            </li>
-            <li class="vacation__list-part">
-              <div class="vacation__img-container">
-                <img src="../assets/img/vacation-img.jpg">
-              </div>
-              <div class="vacation__list-part-content">
-                <h3 class="vavation__list-vacation-name">lorem lorem</h3>
-                <ul class="vacation__list-conditions list-no-marker">
-                  <li><i class="fa fa-briefcase" aria-hidden="true"></i>Полный рабочий день, в офисе</li>
-                  <li><i class="fa fa-money" aria-hidden="true"></i> По итогам собеседования</li>
-                </ul>
-              </div>
-              <a class="link vacation-link" href="mailto:info@telegreen.ru">Отправить резюме</a>
-            </li>
-            <li class="vacation__list-part">
-              <div class="vacation__img-container">
-                <img src="../assets/img/vacation-img.jpg">
-              </div>
-              <div class="vacation__list-part-content">
-                <h3 class="vavation__list-vacation-name">lorem lorem</h3>
-                <ul class="vacation__list-conditions list-no-marker">
-                  <li><i class="fa fa-briefcase" aria-hidden="true"></i>Полный рабочий день, в офисе</li>
-                  <li><i class="fa fa-money" aria-hidden="true"></i> По итогам собеседования</li>
-                </ul>
-              </div>
-              <a class="link vacation-link" href="mailto:info@telegreen.ru">Отправить резюме</a>
-            </li>
-            <li class="vacation__list-part">
-              <div class="vacation__img-container">
-                <img src="../assets/img/vacation-img.jpg">
-              </div>
-              <div class="vacation__list-part-content">
-                <h3 class="vavation__list-vacation-name">lorem lorem</h3>
-                <ul class="vacation__list-conditions list-no-marker">
-                  <li><i class="fa fa-briefcase" aria-hidden="true"></i>Полный рабочий день, в офисе</li>
-                  <li><i class="fa fa-money" aria-hidden="true"></i> По итогам собеседования</li>
-                </ul>
-              </div>
-              <a class="link vacation-link" href="mailto:info@telegreen.ru">Отправить резюме</a>
-            </li>
-          </ul>
+        <div class="afisha__list-container">
+          <div class="afisha__search">
+            <div class="afisha__count">Всего 200 мероприятий</div>
+            <div class="input__search">
+              <input class="afisha__input" type="text" placeholder="Поиск">
+            </div>
+          </div>
+          <ul class="afisha__list list-no-marker"></ul>
+          <div class="afisha__observer"></div>
         </div>
       </div>
     </section>
@@ -309,6 +245,22 @@
       </form>
     </div>
   </div>
+  <div class="modal-window-afisha">
+    <div class="modal-content-afisha">
+      <div class="modal__afisha-title"></div>
+      <div class="modal__afisha-date"></div>
+      <div class="afisha__modal-block">
+        <div class="afisha__modal-img-block">
+          <img>
+        </div>
+        <div class="afisha__modal-description">
+          <div class="afisha__description"></div>
+          <a href="" class="afisha__afisha-link link"></a>
+        </div>
+        <a href="" class="link">Купить</a>
+      </div>
+    </div>
+  </div>
 </body>
 <script src="../assets/js/index.js"></script>
 <script src="../assets/js/dropdown-contact.js"></script>
@@ -325,4 +277,6 @@
 <script src="../assets/js/advanteges-aboutSwiper.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
 <script src="../assets/js/yandex-map.js"></script>
+<script src="../assets/js/afisha.js"></script>
+<script src="../assets/js/modal-afisha.js"></script>
 </html>

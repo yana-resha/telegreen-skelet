@@ -1173,5 +1173,61 @@ header {
   width: 100%;
 }
 
+/* modal-window-afisha */
+
+.modal-window-afisha {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 20;
+  transition: 1s ease-in-out;
+}
+
+.modal-content-afisha {
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  /*  Установаем ширину окна  */
+  /* padding-left: 30px; */
+  /* padding-right: 5px; */
+  /* min-width: 450px; */
+  /* padding-top: 24px; */
+  /* padding-bottom: 25px; */
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  /* transform: scale(0.8); */
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* top: 0%; */
+  /* left: calc((1366px - (450px * 0.8))/2); */
+  /* transform: ; */
+  z-index: 200; /* Должен быть выше чем у подложки*/
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+  display: flex;
+  flex-direction: row;
+  /* align-items: baseline; */
+  justify-content: space-between;
+  border-radius: 3px;
+  background-color: #fff;
+  width: 50%;
+  padding: 50px;
+  transition: 1s ease-in-out;
+}
+
+.modal-window-opacity {
+  opacity: 1;
+  visibility: visible;
+  transition: 1s ease-in-out;
+} 
+
+
 
 

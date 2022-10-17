@@ -1,0 +1,96 @@
+.afisha {
+  background-color: white;
+  padding-top: 160px;
+  padding-bottom: 80px;
+}
+
+.afisha__list-part {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid silver;
+}
+
+.afisha-title {
+  margin-bottom: 50px;
+}
+
+.afisha__list {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-row-gap: 50px;
+  justify-content: space-between;
+}
+
+.afisha__part-img {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.afisha__part-img img{
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.afisha__part-content{
+  padding: 10px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.afisha__content-title {
+  margin-bottom: 20px;
+}
+
+.afisha__content-category, 
+.afisha__content-name,
+.afisha__content-price {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.afisha__content-price {
+  margin-bottom: 30px;
+}
+
+.afisha__button {
+  align-self: center;
+  width: 90%;
+  padding: 10px 20px;
+  background-color: rgba(53, 45, 115, 1);
+  font-weight: 600;
+  border: 1px solid transparent;
+  font-size: 18px;
+  border-radius: 12px;
+  color: white;
+}
+
+.afisha__search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  align-items: flex-end;
+}
+
+.input__search {
+  display: flex;
+  flex-direction: row;
+}
+
+.afisha__input {
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 12px;
+  padding: 5px 10px;
+  min-width: 200px;
+}
+
+.afisha__count {
+  font-weight: 600;
+}
+
