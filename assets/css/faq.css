@@ -12,7 +12,7 @@
 .faq__container {
   display: grid;
   grid-template-columns: 40% 60%;
-  border-top: 1px solid gray;
+  /* border-top: 1px solid gray; */
 }
 
 .faq__block-description p {
@@ -22,12 +22,50 @@
 }
 
 .faq__block-description {
-  border-right: 1px solid gray;
-  padding-top: 50px;
+  /* border-right: 1px solid gray; */
+  padding-top: 30px;
   padding-right: 30px;
 }
 
 .faq__faq_accordion-block {
-  padding-top: 50px;
+  padding-top: 30px;
   padding-left: 30px;
+}
+
+.faq__accordion {
+  margin-top: 0px!important;
+}
+
+.faq__accordion-description {
+  padding: 20px;
+  padding-right: 5px;
+}
+
+.faq__accordion-title {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  /* display: grid; */
+  /* grid-template-columns: 100%; */
+}
+
+.faq__accordion-title-text {
+  width: 90%;
+}
+
+.faq__accordion-title i{
+  width: 10%;
+  width: 10%;
+  text-align: center;
+  display: flex;
+  vertical-align: middle;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 28px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.ui-accordion-header-active.faq__accordion-title i {
+  transform: rotateX(180deg)
 }

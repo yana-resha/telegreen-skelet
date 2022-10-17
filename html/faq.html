@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
   <script src="../assets/js/swiper-bundle.min.js"></script>
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="../assets/css/font-awesome.css">
-  <link rel="stylesheet" href="../assets/css/main.css">
-  <link rel="stylesheet" href="../assets/css/biteltnaya-systema.css">
-  <link rel="stylesheet" href="../assets/css/buyers.css">
   <link rel="stylesheet" href="../assets/css/faq.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
   <title>Платформа для продажи билетов и ....</title>
 </head>
 <body>
@@ -75,73 +75,44 @@
               <button class="nav-btn btn-list btn">Билетная система<i class="fa fa-angle-down" aria-hidden="true"></i></button>
               <ul class="nav-dropdown list-no-marker">
                 <li>
-                  <a href="" class="dropdown-part link">Для концертов</a>
+                  <a href="./biletnaya-sistema-dlya-kinoteatra.html" class="dropdown-part link">Для концертов</a>
                 </li>
                 <li>
-                  <a href="" class="dropdown-part link">Для мероприятий</a>
+                  <a href="./biletnaya-sistema-dlya-kinoteatra.html" class="dropdown-part link">Для мероприятий</a>
                 </li>
                 <li>
-                  <a href="" class="dropdown-part link">Для музеев</a>
+                  <a href="./biletnaya-sistema-dlya-kinoteatra.html" class="dropdown-part link">Для музеев</a>
                 </li>
                 <li>
-                  <a href="" class="dropdown-part link">Для театров</a>
+                  <a href="./biletnaya-sistema-dlya-kinoteatra.html" class="dropdown-part link">Для театров</a>
                 </li>
                 <li>
-                  <a href="" class="dropdown-part link">Пушкинская карта</a>
+                  <a href="./biletnaya-sistema-dlya-kinoteatra.html" class="dropdown-part link">Пушкинская карта</a>
                 </li>
               </ul>
-              <!-- <ul class="nav-dropdown list-no-marker">
-                <li>
-                  <button class="dropdown-part category-open btn">Билетная система <i class="fa fa-angle-down" aria-hidden="true"></i></button>
-                  <ul class="category-list list-no-marker">
-                    <li>
-                      <a href="" class="dropdown-link  link">Для концертов</a>
-                    </li>
-                    <li>
-                      <a href="" class="dropdown-link link">Для мероприятий</a>
-                    </li>
-                    <li>
-                      <a href="" class="dropdown-link link">Для музеев</a>
-                    </li>
-                    <li>
-                      <a href="" class="dropdown-link link">Для театров</a>
-                    </li>
-                    <li>
-                      <a href="" class="dropdown-link link">Пушкинская карта</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="" class="dropdown-part link">Интеграция с Битрикс</a>
-                </li>
-              </ul> -->
             </li>
             <li class="nav-list-part">
               <a href="./skd.html" class="nav-btn link">Оборудование</a>
-              <!-- <button class="nav-btn btn-list btn">Оборудование <i class="fa fa-angle-down" aria-hidden="true"></i></button> -->
-              <!-- <ul class="nav-dropdown list-no-marker">
-                <li>
-                  <a href="" class="dropdown-part link">Паркоматы</a>
-                </li>
-                <li>
-                  <a href="" class="dropdown-part link">Считыватели карт</a>
-                </li>
-                <li>
-                  <a href="" class="dropdown-part link">Турникеты</a>
-                </li>
-              </ul> -->
             </li>
             <li class="nav-list-part">
               <a href="./sales.html"  class="nav-btn link">Акции</a>
             </li>
             <li class="nav-list-part">
-              <a href="./about.html" class="nav-btn link">О компании</a>
+              <button class="nav-btn btn-list btn">О компании<i class="fa fa-angle-down" aria-hidden="true"></i></button>
+              <ul class="nav-dropdown list-no-marker">
+                <li>
+                  <a href="./about.html" class="dropdown-part link">О нас</a>
+                </li>
+                <li>
+                  <a href="./vacation.html" class="dropdown-part link">Вакансии</a>
+                </li>
+                <li>
+                  <a href="./contacts.html" class="dropdown-part link">Контакты</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-list-part">
               <a href="./buyers.html" class="nav-btn link">Покупателям</a>
-            </li>
-            <li class="nav-list-part">
-              <a href="./contacts.html" class="nav-btn link">Контакты</a>
             </li>
             <li class="nav-list-part">
               <a class="nav-btn link">Портфолио</a>
@@ -152,9 +123,7 @@
             <li class="nav-list-part">
               <a href="./faq.html" class="nav-btn link">FAQ</a>
             </li>
-            <li class="nav-list-part">
-              <a href="./vacation.html" class="nav-btn link">Вакансии</a>
-            </li>
+
           </ul>
         </nav>
       </div>
@@ -174,8 +143,36 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, voluptate commodi. Deserunt recusandae autem consequatur, tenetur minus numquam voluptas ullam odit ipsa ab corporis natus minima, eum, consequuntur vel. Alias.</p>
           </div>
           <div class="faq__faq_accordion-block">
-            Этот блок пока пустой потому что скорее всего блок вопрос-ответ мы сделаем с помощью плагина Wordpress по категориям
-            Либо с помощью аккордиона и табов
+            <div class="accordion faq__accordion">
+              <div class="accordion-header faq__accordion-title">
+                <div class="faq__accordion-title-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quam, dolorem pariatur, ad impedit id fugit ipsum culpa officia enim cum ratione sapiente repellat possimus, saepe illum hic? Amet, doloremque?
+                </div>
+                <i class="fa fa-angle-down"></i>
+              </div>
+              <div class="accordion-description faq__accordion-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat odio quia eos alias molestiae saepe ea excepturi ad iste, iure repellendus voluptatem reiciendis assumenda dignissimos? Eius tempora nulla repudiandae repellendus!
+              </div>
+    
+              <div class="accordion-header faq__accordion-title">
+                <div class="faq__accordion-title-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing eli?
+                </div>
+                <i class="fa fa-angle-down"></i>
+              </div>
+              <div class="accordion-description faq__accordion-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, repellat suscipit? Consectetur sint odit, autem, asperiores nostrum ratione accusamus consequuntur unde temporibus obcaecati vitae maiores quibusdam facilis aut quos necessitatibus!
+            </div>
+              <div class="accordion-header faq__accordion-title">
+                <div class="faq__accordion-title-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing eli?
+                </div>
+                <i class="fa fa-angle-down"></i>
+              </div>
+              <div class="accordion-description faq__accordion-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquid fuga error nostrum exercitationem animi facilis, dignissimos voluptates repellendus neque deserunt sunt similique veritatis? Odio animi culpa beatae a ipsa.
+            </div>
+            </div>
           </div>
         </div>
       </div>
@@ -251,7 +248,6 @@
 <script src="../assets/js/dropdown-contact.js"></script>
 <script src="../assets/js/dropdown-nav.js"></script>
 <script src="../assets/js/swiper-1.js"></script>
-<script src="../assets/js/tarifList.js"></script>
 <script src="../assets/js/swiper-advanteges.js"></script>
 <script src="../assets/js/client-swiper.js"></script>
 <script src="../assets/js/articles-swiper.js"></script>
@@ -262,4 +258,7 @@
 <script src="../assets/js/advanteges-aboutSwiper.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
 <script src="../assets/js/yandex-map.js"></script>
+<script src="../assets/js/accordion.js"></script>
+<script src="../assets/js/reviews-image-swiper.js"></script>
+<script src="../assets/js/reviews-text-swiper.js"></script>
 </html>
