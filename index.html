@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
   <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="./assets/css/font-awesome.css">
   <link rel="stylesheet" href="./assets/css/main.css">
   <title>Платформа для продажи билетов и ....</title>
@@ -87,58 +89,29 @@
                   <a href="html/biletnaya-sistema-dlya-kinoteatra.html" class="dropdown-part link">Пушкинская карта</a>
                 </li>
               </ul>
-              <!-- <ul class="nav-dropdown list-no-marker">
-                <li>
-                  <button class="dropdown-part category-open btn">Билетная система <i class="fa fa-angle-down" aria-hidden="true"></i></button>
-                  <ul class="category-list list-no-marker">
-                    <li>
-                      <a href="" class="dropdown-link  link">Для концертов</a>
-                    </li>
-                    <li>
-                      <a href="" class="dropdown-link link">Для мероприятий</a>
-                    </li>
-                    <li>
-                      <a href="" class="dropdown-link link">Для музеев</a>
-                    </li>
-                    <li>
-                      <a href="" class="dropdown-link link">Для театров</a>
-                    </li>
-                    <li>
-                      <a href="" class="dropdown-link link">Пушкинская карта</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="" class="dropdown-part link">Интеграция с Битрикс</a>
-                </li>
-              </ul> -->
             </li>
             <li class="nav-list-part">
               <a href="html/skd.html" class="nav-btn link">Оборудование</a>
-              <!-- <button class="nav-btn btn-list btn">Оборудование <i class="fa fa-angle-down" aria-hidden="true"></i></button> -->
-              <!-- <ul class="nav-dropdown list-no-marker">
-                <li>
-                  <a href="" class="dropdown-part link">Паркоматы</a>
-                </li>
-                <li>
-                  <a href="" class="dropdown-part link">Считыватели карт</a>
-                </li>
-                <li>
-                  <a href="" class="dropdown-part link">Турникеты</a>
-                </li>
-              </ul> -->
             </li>
             <li class="nav-list-part">
               <a href="html/sales.html"  class="nav-btn link">Акции</a>
             </li>
             <li class="nav-list-part">
-              <a href="html/about.html" class="nav-btn link">О компании</a>
+              <button class="nav-btn btn-list btn">О компании<i class="fa fa-angle-down" aria-hidden="true"></i></button>
+              <ul class="nav-dropdown list-no-marker">
+                <li>
+                  <a href="html/about.html" class="dropdown-part link">О нас</a>
+                </li>
+                <li>
+                  <a href="html/vacation.html" class="dropdown-part link">Вакансии</a>
+                </li>
+                <li>
+                  <a href="html/contacts.html" class="dropdown-part link">Контакты</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-list-part">
               <a href="html/buyers.html" class="nav-btn link">Покупателям</a>
-            </li>
-            <li class="nav-list-part">
-              <a href="html/contacts.html" class="nav-btn link">Контакты</a>
             </li>
             <li class="nav-list-part">
               <a class="nav-btn link">Портфолио</a>
@@ -149,9 +122,7 @@
             <li class="nav-list-part">
               <a href="html/faq.html" class="nav-btn link">FAQ</a>
             </li>
-            <li class="nav-list-part">
-              <a href="html/vacation.html" class="nav-btn link">Вакансии</a>
-            </li>
+
           </ul>
         </nav>
       </div>
@@ -180,62 +151,99 @@
           В компанию могут обратиться организаторы мероприятий – руководители театров, музеев, выставочных залов, концертных площадок или спортивных комплексов. Помимо предложения интересного продукта, необходимо подготовить площадку для размещения рекламной информации о готовящемся событии.
         </p>
         <h2 class="service-list-title title">Программа для продажи билетов отличается положительными моментами:</h2>
-        <ul class="ticket-system-list list-no-marker">
-          <li class="ticket-list-part">
-           <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-           <div class="part-decription">оперативный вывод средств за проведенные операции</div>
-          </li>
-          <li class="ticket-list-part">
-            <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-            <div class="part-decription">Комплексные билеты и Комбо билеты</div>
-          </li>
-          <li class="ticket-list-part">
-            <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-            <div class="part-decription">АИС «Учет продажи билетов»</div>
-          </li>
-          <li class="ticket-list-part">
-            <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-            <div class="part-decription">Поддержка программы «Пушкинская карта», рассчитанной на молодых посетителей</div>
-          </li>
-          <li class="ticket-list-part">
-            <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-            <div class="part-decription">возможность запуска продажи в течение дня</div>
-          </li>
-          <li class="ticket-list-part">
-            <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-            <div class="part-decription">Комплексные билеты и Комбо билеты</div>
-          </li>
-        </ul>
+        <div class="ticket-system-list">
+          <div class="ticket-list-part-title">Перечисление преимуществ</div>
+          <div class="ticket-list-part-title">Билетная система компании TeleGreen</div>
+          <div class="ticket-list-part-title">Другие билетные системы</div>
+          <div class="ticket-list-part yes-name">оперативный вывод средств за проведенные операции</div>
+          <div class="ticket-list-part yes"><i class="fa fa-check" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes-name">Комплексные билеты и Комбо билеты</div>
+          <div class="ticket-list-part yes"><i class="fa fa-check" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+          
+          <div class="ticket-list-part yes-name">АИС «Учет продажи билетов»</div>
+          <div class="ticket-list-part yes"><i class="fa fa-check" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+          
+          <div class="ticket-list-part yes-name">Поддержка программы «Пушкинская карта», рассчитанной на молодых посетителей</div>
+          <div class="ticket-list-part yes"><i class="fa fa-check" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+          
+          <div class="ticket-list-part yes-name">Возможность запуска продажи в течение дня</div>
+          <div class="ticket-list-part yes"><i class="fa fa-check" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+          
+          <div class="ticket-list-part yes-name">Комплексные билеты и Комбо билеты</div>
+          <div class="ticket-list-part yes"><i class="fa fa-check" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+        </div>
         <p class="ticket-system-decsription-telegreen">
           В компании <a href="">TeleGreen</a> доступна организация продажи билетов по выгодному предложению. Важно проработать программу и разместить подробную информацию об организаторе и содержании события. Благодаря автоматизации потенциальные клиенты могут самостоятельно выбирать билеты.
         </p>
       </div>
     </section>
-    <section class="service">
-      <div class="container">
-        <h1 class="service-title main-title">
-          Наши услуги и продукты
-        </h1>
-        <ul class="service-list list-no-marker">
-          <li class="service-list-part pushkin-card">
-            <a class="service-list-part-link link" href="">Поддержка пушкинской карты</a>
-          </li>
-          <li class="service-list-part controls">
-            <a class="service-list-part-link link" href="">Системы контроля доступа</a>
-          </li>
-          <li class="service-list-part terminal">
-            <a class="service-list-part-link link" href="">Билетные терминалы</a>
-          </li>
-          <li class="service-list-part access">
-            <a class="service-list-part-link link" href="">Считыватели доступа</a>
-          </li>
-        </ul>
-      </div>
-    </section>
     <section class="our-ticket-systems">
       <div class="container">
-        <h1 class="system-title main-title"> Наши билетные системы </h1>
-        <div class="system-content-container">
+        <h1 class="system-title main-title">Наши билетные системы </h1>
+        <div class="our-ticket-systems__list">
+          <div class="swiper-slide system-slide">
+            <a class="our-system-part-link link" href="html/biletnaya-sistema-dlya-kinoteatra.html">
+              <div class="img-container">
+                <img src="./assets/img/musey.jpeg" alt="изображение музея">
+              </div>
+              <div class="part-content">
+                <h2>Для музеев</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, doloribus tempora. Quod, similique. Porro praesentium, a ut delectus inventore esse cupiditate dolore optio perspiciatis fugiat unde labore dolor doloribus? Ipsam!</p>
+              </div>
+            </a> 
+          </div>
+          <div class="swiper-slide system-slide">
+            <a class="our-system-part-link link" href="html/biletnaya-sistema-dlya-kinoteatra.html">
+              <div class="img-container">
+                <img src="./assets/img/theatre.jpg" alt="изображение театра">
+              </div>
+              <div class="part-content">
+                <h2>Для театров</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores optio aut quo praesentium impedit hic ex sit consequuntur, accusamus, consequatur alias? Ipsa vitae praesentium alias corrupti dolores ullam similique expedita.</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide system-slide">
+            <a class="our-system-part-link link" href="html/biletnaya-sistema-dlya-kinoteatra.html">
+              <div class="img-container">
+                <img src="./assets/img/concert.jpg" alt="изображение концерта">
+              </div>
+              <div class="part-content">
+                <h2>Для концерта</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores optio aut quo praesentium impedit hic ex sit consequuntur, accusamus, consequatur alias? Ipsa vitae praesentium alias corrupti dolores ullam similique expedita.</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide system-slide">
+            <a class="our-system-part-link link" href="html/biletnaya-sistema-dlya-kinoteatra.html">
+              <div class="img-container">
+                <img src="./assets/img/kinotheatre.jpg" alt="изображение кинотеатра">
+              </div>
+              <div class="part-content">
+                <h2>Для кинотеатра</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores optio aut quo praesentium impedit hic ex sit consequuntur, accusamus, consequatur alias? Ipsa vitae praesentium alias corrupti dolores ullam similique expedita.</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide system-slide">
+            <a class="our-system-part-link link" href="html/biletnaya-sistema-dlya-kinoteatra.html">
+              <div class="img-container">
+                <img src="./assets/img/мероприятие.jfif" alt="изображение мероприятия">
+              </div>
+              <div class="part-content">
+                <h2>Для мероприятия</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores optio aut quo praesentium impedit hic ex sit consequuntur, accusamus, consequatur alias? Ipsa vitae praesentium alias corrupti dolores ullam similique expedita.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- <div class="system-content-container">
           <div class="swiper system-swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide system-slide">
@@ -297,7 +305,7 @@
           </div>
           <div class="swiper-button-prev system-swiper-button"></div>
           <div class="swiper-button-next system-swiper-button"></div>
-        </div>
+        </div> -->
       </div>
     </section>
     <section class="tarifs">
@@ -305,19 +313,60 @@
         <h1 class="tarif-title main-title">
           Действуют комфортные тарифы за услуги
         </h1>
-        <ul class="tarifs__list list-no-marker">
-          <li class="tarifs__list-part">
-            <div class="svg-container">
-              <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-            </div>
-            <div class="tarifs-list-part-content">
-              <div class="tarifs__list-part-top">
-                <h2 class="tarif-part-title title">SMART</h2>
-                <p class="tarif-part-short-description">Комиссия 3% от Online продаж</p>
-              </div>
-              
-              <div class="tarifs__list-part-bottom">
-              <div class="botton-title">Что входит в стоимость:</div>
+        <div class="tarifs-list">
+          <div class="tarifs-list-part-title"></div>
+          <div class="tarifs-list-part-title">SMART</div>
+          <div class="tarifs-list-part-title">STANDART</div>
+          <div class="tarifs-list-part-title">ПУШКИНСКАЯ КАРТА</div>
+          <div class="ticket-list-part yes-name-tarifs">Цены</div>
+          <div class="ticket-list-part yes">Комиссия 3% от Online продаж</div>
+          <div class="ticket-list-part yes">Комиссия 4% от Online продаж</div>
+          <div class="ticket-list-part yes">Комиссия 5% от Online продаж</div>
+          <div class="ticket-list-part yes-name-tarifs">Комплексные билеты и Комбо билеты</div>
+          <div class="ticket-list-part yes"><i class="fa fa-check" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+          
+          <div class="ticket-list-part yes-name-tarifs">Виджет для Онлайн продаж</div>
+          <div class="ticket-list-part yes"><i class="fa fa-check" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+          
+          <div class="ticket-list-part yes-name-tarifs">Линия поддержки покупателей электронных билетов по телефону и email</div>
+          <div class="ticket-list-part yes"><i class="fa fa-check" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+          
+          <div class="ticket-list-part yes-name-tarifs">Техническая поддержка по работе с системой для заказчиков</div>
+          <div class="ticket-list-part yes"><i class="fa fa-check" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+          
+          <div class="ticket-list-part yes-name-tarifs">Программное обеспечение для Offline продаж</div>
+          <div class="ticket-list-part yes"><i class="fa fa-check" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+          <div class="ticket-list-part yes-name-tarifs">Интернет эквайринг</div>
+          <div class="ticket-list-part yes"><i class="fa fa-check" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+          <div class="ticket-list-part yes-name-tarifs">Обновления системы</div>
+          <div class="ticket-list-part yes"><i class="fa fa-check" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+          <div class="ticket-list-part yes-name-tarifs">Экскурсии и отдел бронирования</div>
+          <div class="ticket-list-part yes"><i class="fa fa-check" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+          <div class="ticket-list-part yes"><i class="fa fa-times" aria-hidden="true"></i></div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header">SMART</div>
+          <div class="accordion-description">
+              <p class="tarif-part-short-description">Комиссия 3% от Online продаж</p>
+              <div class="">Что входит в стоимость:</div>
               <ul>
                 <li>Виджет для Онлайн продаж</li>
                 <li>Линия поддержки покупателей электронных билетов по телефону и email</li>
@@ -325,59 +374,33 @@
                 <li>Программное обеспечение для Offline продаж</li>
                 <li>Обновления системы</li>
               </ul>
-            </div>
-            </div>
-          </li>
-          <li class="tarifs__list-part">
-            <div class="svg-container">
-              <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-            </div>
-            <div class="tarifs-list-part-content">
-              <div class="tarifs__list-part-top">
-                <h2 class="tarif-part-title title">STANDART</h2>
-                <p class="tarif-part-short-description">Комиссия 4% от Online продаж</p>
-                <div class="tarifs__list-part-bottom">
-                  <div class="botton-title">Что входит в стоимость:</div>
-                  <ul>
-                    <li>Интернет эквайринг,</li>
-                    <li>On-line фискализация (ККТ ФЗ-54) при продаже электронных билетов,</li>
-                    <li>Виджет для Онлайн продаж</li>
-                    <li>Линия поддержки покупателей электронных билетов по телефону и email,</li>
-                    <li>Техническая поддержка по работе с системой для заказчиков,</li>
-                    <li>Программное обеспечение для Offline продаж,</li>
-                    <li>Обновления системы.</li>
-                    <li>Экскурсии и отдел бронирования.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="tarifs__list-part">
-            <div class="svg-container">
-              <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-            </div>
-            <div class="tarifs-list-part-content">
-              <div class="tarifs__list-part-top">
-                <h2 class="tarif-part-title title">ПУШКИНСКАЯ КАРТА</h2>
-                <p class="tarif-part-short-description">Комиссия 5% от Online продаж</p>
-                <div class="tarifs__list-part-bottom">
-                  <div class="botton-title">Что входит в стоимость:</div>
-                  <ul>
-                    <li>Интернет эквайринг по "Белому" терминалу,</li>
-                    <li>On-line фискализация (ККТ ФЗ-54) при продаже электронных билетов,</li>
-                    <li>Виджет для Онлайн продаж</li>
-                    <li>Линия поддержки покупателей электронных билетов по телефону и email,</li>
-                    <li>Регистрация сделок в системе "Пушкинская карта"</li>
-                    <li>Техническая поддержка по работе с системой для заказчиков,</li>
-                    <li>Программное обеспечение для Offline продаж,</li>
-                    <li>Обновления системы.</li>
-                    <li>Экскурсии и отдел бронирования.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+          </div>
+
+          <div class="accordion-header">STANDART</div>
+          <div class="accordion-description">
+            <p class="tarif-part-short-description">Комиссия 3% от Online продаж</p>
+            <div class="">Что входит в стоимость:</div>
+            <ul>
+              <li>Виджет для Онлайн продаж</li>
+              <li>Линия поддержки покупателей электронных билетов по телефону и email</li>
+              <li>Техническая поддержка по работе с системой для заказчиков</li>
+              <li>Программное обеспечение для Offline продаж</li>
+              <li>Обновления системы</li>
+            </ul>
+        </div>
+          <div class="accordion-header">ПУШКИНСКАЯ КАРТА</div>
+          <div class="accordion-description">
+            <p class="tarif-part-short-description">Комиссия 3% от Online продаж</p>
+            <div class="">Что входит в стоимость:</div>
+            <ul>
+              <li>Виджет для Онлайн продаж</li>
+              <li>Линия поддержки покупателей электронных билетов по телефону и email</li>
+              <li>Техническая поддержка по работе с системой для заказчиков</li>
+              <li>Программное обеспечение для Offline продаж</li>
+              <li>Обновления системы</li>
+            </ul>
+        </div>
+        </div>
       </div>
     </section>
     <section class="advanteges">
@@ -500,6 +523,27 @@
         </div>
       </div>
     </section>
+    <section class="service">
+      <div class="container">
+        <h1 class="service-title main-title">
+          Наши услуги и продукты
+        </h1>
+        <ul class="service-list list-no-marker">
+          <li class="service-list-part pushkin-card">
+            <a class="service-list-part-link link" href="">Поддержка пушкинской карты</a>
+          </li>
+          <li class="service-list-part controls">
+            <a class="service-list-part-link link" href="">Системы контроля доступа</a>
+          </li>
+          <li class="service-list-part terminal">
+            <a class="service-list-part-link link" href="">Билетные терминалы</a>
+          </li>
+          <li class="service-list-part access">
+            <a class="service-list-part-link link" href="">Считыватели доступа</a>
+          </li>
+        </ul>
+      </div>
+    </section>
     <section class="clients">
       <div class="container">
         <h1 class="main-title clients__title">Наши клиенты</h1>
@@ -541,6 +585,11 @@
           <div class="client-swiper-button-prev clients__prev"></div>
           <div class="client-swiper-button-next clients__next"></div>
         </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        
       </div>
     </section>
     <section class="articles">
@@ -735,7 +784,6 @@
 <script src="./assets/js/dropdown-contact.js"></script>
 <script src="./assets/js/dropdown-nav.js"></script>
 <script src="./assets/js/swiper-1.js"></script>
-<script src="./assets/js/tarifList.js"></script>
 <script src="./assets/js/swiper-advanteges.js"></script>
 <script src="./assets/js/client-swiper.js"></script>
 <script src="./assets/js/articles-swiper.js"></script>
@@ -746,4 +794,5 @@
 <script src="./assets/js/advanteges-aboutSwiper.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
 <script src="./assets/js/yandex-map.js"></script>
+<script src="./assets/js/accordion.js"></script>
 </html>

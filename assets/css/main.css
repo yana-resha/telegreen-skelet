@@ -380,9 +380,6 @@ header {
   padding-bottom: 20px;
 }
 
-.ticket-system p:last-child {
-  margin-bottom: 50px;
-}
 
 .ticket-system-title {
   font-size: 42px;
@@ -403,8 +400,50 @@ header {
   font-size: 24px;
 }
 
-
 .ticket-system-list {
+  display: grid;
+  background-color: gray;
+  grid-template-columns: 50% 25% 25%;
+  grid-gap: 2px;
+  border: 2px solid gray;
+  margin-left: 5px;
+  margin-right: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.ticket-list-part {
+  min-height: 50px;
+  background-color: white;
+  
+}
+
+.yes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.ticket-list-part-title {
+  text-align: center;
+  font-weight: 600;
+  min-height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yes-name {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+
+/* .ticket-system-list {
   display: grid;
   grid-template-columns: repeat(6, 15%);
   grid-row-gap: 20px;
@@ -429,7 +468,7 @@ header {
 
 .ticket-list-part svg path {
   stroke: blue;
-}
+} */
 
 .service-list-title {
   margin-bottom: 30px;
@@ -501,12 +540,21 @@ header {
 
 .our-ticket-systems {
   background-color: white;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 20px;
 }
 
 .system-title {
   margin-bottom: 50px;
+}
+
+
+
+.our-ticket-systems__list {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-between;
+  grid-row-gap: 30px;
 }
 
 
@@ -596,14 +644,14 @@ header {
   margin-bottom: 30px;
 }
 
-.tarifs__list {
+/* .tarifs__list {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-gap: 20px;
 }
 
 .tarifs__list-part {
-  background-color: blue;
+  background-color: silver;
   border-radius: 6px;
   overflow: hidden;
   padding: 30px;
@@ -630,6 +678,37 @@ header {
   padding: 0;
   margin: 0;
 }
+ */
+
+
+
+.yes-name-tarifs {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+ .tarifs-list-part-title {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+.tarifs-list {
+  display: grid;
+  grid-template-columns: 40% 20% 20% 20%;
+  grid-gap: 1px;
+  background-color: rgba(192,192,192, 0.8);
+  border: 1px solid rgba(192,192,192, 0.8);
+  overflow: hidden;
+}
+
+.tarifs-list div{
+  min-height: 50px;
+  background-color: white;
+}
 
 
 
@@ -648,9 +727,6 @@ header {
   stroke: white;
 }
 
-.tarifs__list-part-bottom {
-  display: none;
-}
 
 .visible {
   display: block;
@@ -915,6 +991,37 @@ header {
 }
 
 
+/* reviews */
+
+.reviews {
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.accordion {
+  margin-top: 50px;
+}
+
+.accordion-header {
+  cursor: pointer;
+}
+
+.accordion-header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  border-top: 1px solid black;
+}
+
+.accordion {
+  border-bottom: 1px solid black;
+}
+
+.accordion-description {
+  border-top: 1px solid black;
+}
+
 /* callback-section */
 
 .callback-section {
@@ -1057,12 +1164,6 @@ header {
   flex-direction: column; 
 }
 
-
-
-.footer-rigth-block {
-  
-}
-
 .footer__middle-block-list li:not(:last-child) {
   margin-bottom: 15px;
 }
@@ -1198,9 +1299,10 @@ header {
   /* padding-top: 24px; */
   /* padding-bottom: 25px; */
   /*  Центрируем и задаем z-index */
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
   /* transform: scale(0.8); */
-  top: 20%;
+  top: 5%;
   left: 50%;
   transform: translateX(-50%);
   /* left: 50%; */
@@ -1212,7 +1314,7 @@ header {
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   /* align-items: baseline; */
   justify-content: space-between;
   border-radius: 3px;
@@ -1227,6 +1329,8 @@ header {
   visibility: visible;
   transition: 1s ease-in-out;
 } 
+
+
 
 
 

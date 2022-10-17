@@ -6,6 +6,10 @@ const root = document.querySelector('.afisha__observer');
 const searchButton = document.querySelector('.submit-search');
 const inputSearch = document.querySelector('.afisha__input');
 
+const modalAfishaBackground = document.querySelector('.modal-window-afisha');
+
+
+
 
 
 
@@ -51,6 +55,25 @@ function createAfisha (arr) {
     const afishaButton = document.createElement('button');
     afishaButton.classList.add('afisha__button');
     afishaButton.textContent = 'Купить билет';
+
+    afishaButton.addEventListener('click', () => {
+      modalAfishaBackground.classList.add('modal-window-opacity');
+      modalAfishaBackground.querySelector('.modal__afisha-title').textContent = el.eventName;
+      modalAfishaBackground.querySelector('.modal__afisha-date').textContent = el.date;
+      modalAfishaBackground.querySelector('.afisha__modal-img-block img').src = el.eventImg;
+      modalAfishaBackground.querySelector('.afisha__modal-img-block img').src = el.eventImg;
+      modalAfishaBackground.querySelector('.afisha__description').textContent = el.description;
+      modalAfishaBackground.querySelector('.afisha__afisha-link').textContent = `${el.officialSite}`;
+
+
+
+
+      modalAfishaBackground.addEventListener('click', (e) => {
+        if (e.target === modalAfishaBackground) {
+          modalAfishaBackground.classList.remove('modal-window-opacity');
+        }
+      })
+    })
 
     afishaContentBlock.append(afishaContentBlockTitle, afishaContentBlockCategory, afishaContentName, afishaContentPrice, afishaButton);
     afishaImgBlock.append(afishaImg);
