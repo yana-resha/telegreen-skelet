@@ -116,13 +116,6 @@
 }
 
 
-.skd-part__list-part-content img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
 .skd-part__catalog-list-part {
   border-radius: 12px;
@@ -137,6 +130,15 @@
   position: relative;
   height: 250px;
 }
+
+.skd-part__list-part-content img{
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%; 
+}
+
 
 .M5::after {
   content: 'Контроллер - считыватель Telegreen M5';
@@ -170,19 +172,17 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-  font-size: 16px;
- 
-  padding-left: 15px;
-  padding-right: 15px;
-  font-weight: 600;
-  text-align: center;
   display: flex;
-  vertical-align: middle;
+  font-weight: 600;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  
   transition: background-color 0.3s ease-in-out;
 }
+
 
 .skd-part__list-part-content:hover::after,
 .skd-part__list-part-content:focus-visible::after {
@@ -210,7 +210,101 @@
 }
 
 
-.skd-part__category-list  {
-  margin-left: 65px;
-  margin-right: 65px;
+.catalog-container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-column-gap: 30px;
 }
+
+
+.skg-part__list {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-between;
+  grid-row-gap: 50px;
+  margin-bottom: 50px;
+}
+
+.catalog__filter {
+  position: relative;
+}
+
+.filter-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.filter-price-input-block {
+  display: flex;
+  flex-direction: row;
+}
+
+/* .filter-price-input-block label {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+} */
+
+.filter__input-container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 30px;
+  border: 1px solid gray;
+}
+
+.filter__input-container input {
+  padding: 10px;
+  width: 50%;
+}
+
+.filter__input-to {
+  border: none;
+  border-right: 1px solid gray;
+}
+
+.filter-price-input-block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.filter__label-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 5px;
+}
+
+.filter__input-from {
+  border: none;
+}
+
+.filter-price-text {
+  margin-bottom: 10px;
+}
+
+.filter-title {
+  margin-bottom: 10px;
+}
+
+.filter-btn-submit {
+  background-color: gray;
+  color: white;
+  padding: 10px 20px; 
+  border: 1px solid transparent;
+  outline: none;
+}
+
+

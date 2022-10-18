@@ -1,0 +1,25 @@
+.project-part {
+  background-color: white;
+  padding-top: 160px;
+  padding-bottom: 80px;
+}
+
+.project-part__title {
+  margin-bottom: 50px;
+}
+
+.project-part__slide img {
+  width: 100%;
+}
+
+.project-part__swiper {
+  height: 500px;
+}
+
+.project-part__content {
+  padding: 20px;
+}
+
+.project-part__block {
+  max-width: 1024px;
+}
