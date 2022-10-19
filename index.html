@@ -135,12 +135,12 @@
   <article class="hero">
     <div class="container hero-container">
       <h1 class="hero-title">TeleGreen</h1>
-      <h2 class="hero-title-work">
+      <div class="hero-title-work">
         Современная платформа продажи билетов TeleGreen
-      </h2>
-      <h2 class="hero-title-work last">
+      </div>
+      <div class="hero-title-work last">
         Установка системы контроля доступа посетителей
-      </h2>
+      </div>
       <p class="hero-description">
         Хотите продать билеты -
         Поможем организаторам и площадкам решить все вопросы с продажей и контролем билетов  
@@ -154,7 +154,7 @@
         <p class="ticket-system-decsription">
           В компанию могут обратиться организаторы мероприятий – руководители театров, музеев, выставочных залов, концертных площадок или спортивных комплексов. Помимо предложения интересного продукта, необходимо подготовить площадку для размещения рекламной информации о готовящемся событии.
         </p>
-        <h2 class="service-list-title title">Программа для продажи билетов отличается положительными моментами:</h2>
+        <div class="service-list-title title">Программа для продажи билетов отличается положительными моментами:</div>
         <div class="ticket-system-list">
           <div class="ticket-list-part-title">Перечисление преимуществ</div>
           <div class="ticket-list-part-title">Билетная система компании TeleGreen</div>
@@ -190,126 +190,69 @@
     <section class="our-ticket-systems">
       <div class="container">
         <h1 class="system-title main-title">Наши билетные системы </h1>
-        <div class="our-ticket-systems__list">
-          <div class="swiper-slide system-slide">
-            <a class="our-system-part-link link" href="html/biletnaya-sistema-dlya-kinoteatra.html">
+        <div class="our-ticket-systems__list" itemscope itemtype = "https://schema.org/ItemList" itemprop = "ItemList" numberofitem="5">
+          <link itemprop = "itemListOrder" href = "https://schema.org/ItemListOrderDescending" />
+          <div class="swiper-slide system-slide" itemprop = "itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a class="our-system-part-link link" itemprop = "url" href="html/biletnaya-sistema-dlya-kinoteatra.html">
               <div class="img-container">
-                <img src="./assets/img/musey.jpeg" alt="изображение музея">
+                <img src="./assets/img/musey.jpeg" alt="изображение музея" itemprop = "image">
               </div>
               <div class="part-content">
-                <h2>Для музеев</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, doloribus tempora. Quod, similique. Porro praesentium, a ut delectus inventore esse cupiditate dolore optio perspiciatis fugiat unde labore dolor doloribus? Ipsam!</p>
-              </div>
-            </a> 
-          </div>
-          <div class="swiper-slide system-slide">
-            <a class="our-system-part-link link" href="html/biletnaya-sistema-dlya-kinoteatra.html">
-              <div class="img-container">
-                <img src="./assets/img/theatre.jpg" alt="изображение театра">
-              </div>
-              <div class="part-content">
-                <h2>Для театров</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores optio aut quo praesentium impedit hic ex sit consequuntur, accusamus, consequatur alias? Ipsa vitae praesentium alias corrupti dolores ullam similique expedita.</p>
+                <div class="title part-content__title" itemprop = "itemListElementTitle">Для музеев</div>
+                <p itemprop = "описание для чего нужна билетная система в театрах">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, doloribus tempora. Quod, similique. Porro praesentium, a ut delectus inventore esse cupiditate dolore optio perspiciatis fugiat unde labore dolor doloribus? Ipsam!</p>
               </div>
             </a>
+            <meta itemprop="position" content="1" /> 
           </div>
-          <div class="swiper-slide system-slide">
-            <a class="our-system-part-link link" href="html/biletnaya-sistema-dlya-kinoteatra.html">
+          <div class="swiper-slide system-slide" itemprop = "itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a class="our-system-part-link link" itemprop = "url" href="html/biletnaya-sistema-dlya-kinoteatra.html">
               <div class="img-container">
-                <img src="./assets/img/concert.jpg" alt="изображение концерта">
+                <img src="./assets/img/theatre.jpg" alt="изображение театра" itemprop = "image">
               </div>
               <div class="part-content">
-                <h2>Для концерта</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores optio aut quo praesentium impedit hic ex sit consequuntur, accusamus, consequatur alias? Ipsa vitae praesentium alias corrupti dolores ullam similique expedita.</p>
+                <div class="title part-content__title" itemprop = "itemListElementTitle">Для театров</div>
+                <p itemprop = "описание для чего нужна билетная система в театрах">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores optio aut quo praesentium impedit hic ex sit consequuntur, accusamus, consequatur alias? Ipsa vitae praesentium alias corrupti dolores ullam similique expedita.</p>
               </div>
             </a>
+            <meta itemprop="position" content="2" /> 
           </div>
-          <div class="swiper-slide system-slide">
-            <a class="our-system-part-link link" href="html/biletnaya-sistema-dlya-kinoteatra.html">
+          <div class="swiper-slide system-slide" itemprop = "itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a class="our-system-part-link link" itemprop = "url" href="html/biletnaya-sistema-dlya-kinoteatra.html">
               <div class="img-container">
-                <img src="./assets/img/kinotheatre.jpg" alt="изображение кинотеатра">
+                <img src="./assets/img/concert.jpg" alt="изображение концерта" itemprop = "image">
               </div>
               <div class="part-content">
-                <h2>Для кинотеатра</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores optio aut quo praesentium impedit hic ex sit consequuntur, accusamus, consequatur alias? Ipsa vitae praesentium alias corrupti dolores ullam similique expedita.</p>
+                <div class="title part-content__title" itemprop = "itemListElementTitle">Для концерта</div>
+                <p itemprop = "описание для чего нужна билетная система на концертах">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores optio aut quo praesentium impedit hic ex sit consequuntur, accusamus, consequatur alias? Ipsa vitae praesentium alias corrupti dolores ullam similique expedita.</p>
               </div>
             </a>
+            <meta itemprop="position" content="3" /> 
           </div>
-          <div class="swiper-slide system-slide">
-            <a class="our-system-part-link link" href="html/biletnaya-sistema-dlya-kinoteatra.html">
+          <div class="swiper-slide system-slide" itemprop = "itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a class="our-system-part-link link" itemprop = "url" href="html/biletnaya-sistema-dlya-kinoteatra.html">
               <div class="img-container">
-                <img src="./assets/img/мероприятие.jfif" alt="изображение мероприятия">
+                <img src="./assets/img/kinotheatre.jpg" alt="изображение кинотеатра" itemprop = "image">
               </div>
               <div class="part-content">
-                <h2>Для мероприятия</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores optio aut quo praesentium impedit hic ex sit consequuntur, accusamus, consequatur alias? Ipsa vitae praesentium alias corrupti dolores ullam similique expedita.</p>
+                <div class="title part-content__title" itemprop = "itemListElementTitle">Для кинотеатра</div>
+                <p itemprop = "описание для чего нужна билетная система в кинотеатрах">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores optio aut quo praesentium impedit hic ex sit consequuntur, accusamus, consequatur alias? Ipsa vitae praesentium alias corrupti dolores ullam similique expedita.</p>
               </div>
             </a>
+            <meta itemprop="position" content="4" /> 
+          </div>
+          <div class="swiper-slide system-slide" itemprop = "itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a class="our-system-part-link link" itemprop = "url" href="html/biletnaya-sistema-dlya-kinoteatra.html">
+              <div class="img-container">
+                <img src="./assets/img/мероприятие.jfif" alt="изображение мероприятия" itemprop = "image">
+              </div>
+              <div class="part-content">
+                <div class="title part-content__title" itemprop = "itemListElementTitle">Для мероприятия</div>
+                <p itemprop = "описание для чего нужна билетная система на меропрятиях">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores optio aut quo praesentium impedit hic ex sit consequuntur, accusamus, consequatur alias? Ipsa vitae praesentium alias corrupti dolores ullam similique expedita.</p>
+              </div>
+            </a>
+            <meta itemprop="position" content="5"/> 
           </div>
         </div>
-        <!-- <div class="system-content-container">
-          <div class="swiper system-swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide system-slide">
-                <a class="our-system-part-link link" href="html/biletnaya-sistema-dlya-kinoteatra.html">
-                  <div class="img-container">
-                    <img src="./assets/img/musey.jpeg" alt="изображение музея">
-                  </div>
-                  <div class="part-content">
-                    <h2>Для музеев</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, doloribus tempora. Quod, similique. Porro praesentium, a ut delectus inventore esse cupiditate dolore optio perspiciatis fugiat unde labore dolor doloribus? Ipsam!</p>
-                  </div>
-                </a> 
-              </div>
-              <div class="swiper-slide system-slide">
-                <a class="our-system-part-link link" href="html/biletnaya-sistema-dlya-kinoteatra.html">
-                  <div class="img-container">
-                    <img src="./assets/img/theatre.jpg" alt="изображение театра">
-                  </div>
-                  <div class="part-content">
-                    <h2>Для театров</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores optio aut quo praesentium impedit hic ex sit consequuntur, accusamus, consequatur alias? Ipsa vitae praesentium alias corrupti dolores ullam similique expedita.</p>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide system-slide">
-                <a class="our-system-part-link link" href="html/biletnaya-sistema-dlya-kinoteatra.html">
-                  <div class="img-container">
-                    <img src="./assets/img/concert.jpg" alt="изображение концерта">
-                  </div>
-                  <div class="part-content">
-                    <h2>Для концерта</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores optio aut quo praesentium impedit hic ex sit consequuntur, accusamus, consequatur alias? Ipsa vitae praesentium alias corrupti dolores ullam similique expedita.</p>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide system-slide">
-                <a class="our-system-part-link link" href="html/biletnaya-sistema-dlya-kinoteatra.html">
-                  <div class="img-container">
-                    <img src="./assets/img/kinotheatre.jpg" alt="изображение кинотеатра">
-                  </div>
-                  <div class="part-content">
-                    <h2>Для кинотеатра</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores optio aut quo praesentium impedit hic ex sit consequuntur, accusamus, consequatur alias? Ipsa vitae praesentium alias corrupti dolores ullam similique expedita.</p>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide system-slide">
-                <a class="our-system-part-link link" href="html/biletnaya-sistema-dlya-kinoteatra.html">
-                  <div class="img-container">
-                    <img src="./assets/img/мероприятие.jfif" alt="изображение мероприятия">
-                  </div>
-                  <div class="part-content">
-                    <h2>Для мероприятия</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores optio aut quo praesentium impedit hic ex sit consequuntur, accusamus, consequatur alias? Ipsa vitae praesentium alias corrupti dolores ullam similique expedita.</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-prev system-swiper-button"></div>
-          <div class="swiper-button-next system-swiper-button"></div>
-        </div> -->
       </div>
     </section>
     <section class="tarifs">
@@ -424,7 +367,7 @@
                   <i class="fa fa-rocket" aria-hidden="true"></i>
                 </div>
                 <div class="advantages__slide-content">
-                  <h2 class="advantages__slide-title">Разработка мультиязычного виджета</h2>
+                  <div class="advantages__slide-title title">Разработка мультиязычного виджета</div>
                   <p class="advantages__slide-description">
                     Благодаря нему продажи в режиме online увеличиваются. Обеспечивается удобная адаптация под пожелания клиентов и необходимый дизайн.
                   </p>
@@ -435,7 +378,7 @@
                   <i class="fa fa-rocket" aria-hidden="true"></i>
                 </div>
                 <div class="advantages__slide-content">
-                  <h2 class="advantages__slide-title">Аналитика и отчетность</h2>
+                  <div class="advantages__slide-title title">Аналитика и отчетность</div>
                   <p class="advantages__slide-description">
                     Возможен сбор полной информации с последующим анализом. Без подобного подхода сложно разработать удачную рекламную кампанию. Отчеты формируются благодаря разнообразию настроек и фильтров. Предоставляется срез практически по любому параметру. Подобная система заменяет большой отдел маркетологов и аналитиков. Кроме того, допускается выгрузка и пересылка отчетов по определенным дням.
                   </p>
@@ -446,7 +389,7 @@
                   <i class="fa fa-rocket" aria-hidden="true"></i>
                 </div>
                 <div class="advantages__slide-content">
-                  <h2 class="advantages__slide-title">Контроль за билетами</h2>
+                  <div class="advantages__slide-title title">Контроль за билетами</div>
                   <p class="advantages__slide-description">
                     Предусмотрены отдельные приложения для сканирования билетов. Они разрабатываются для мобильных терминалов, стационарных считывателей на турникетах и смартфонов. Отчетность также формируется по окончании мероприятия. Таким образом можно сверить количество проданных билетов и реально посетивших событие клиентов.
                   </p>
@@ -457,7 +400,7 @@
                   <i class="fa fa-rocket" aria-hidden="true"></i>
                 </div>
                 <div class="advantages__slide-content">
-                  <h2 class="advantages__slide-title">Ценообразование</h2>
+                  <div class="advantages__slide-title title">Ценообразование</div>
                   <p class="advantages__slide-description">
                     Обеспечивается не только планирование, но и динамическое изменение цен. При этом можно вносить разные тарифы в зависимости от города проведения мероприятия. Вводятся особые периоды скидок. Возможно использование промокодов.
                   </p>
@@ -468,7 +411,7 @@
                   <i class="fa fa-rocket" aria-hidden="true"></i>
                 </div>
                 <div class="advantages__slide-content">
-                  <h2 class="advantages__slide-title">Промокоды</h2>
+                  <div class="advantages__slide-title title">Промокоды</div>
                   <p class="advantages__slide-description">
                     Множество вариантов работы с промокодами, настройка правил для групп, автогенерация, индивидуальные предложения.
                   </p>
@@ -479,7 +422,7 @@
                   <i class="fa fa-rocket" aria-hidden="true"></i>
                 </div>
                 <div class="advantages__slide-content">
-                  <h2 class="advantages__slide-title">Реализация комплексных билетов.</h2>
+                  <div class="advantages__slide-title title">Реализация комплексных билетов.</div>
                   <p class="advantages__slide-description">
                     Это уникальное предложение, которое позволяет при одной покупке посетить сразу несколько мероприятий или объектов. Покупатель может подобрать свой состав событий, которые ему интересны. Также учитывается удаленность расположения объектов.
                   </p>
@@ -490,7 +433,7 @@
                   <i class="fa fa-rocket" aria-hidden="true"></i>
                 </div>
                 <div class="advantages__slide-content">
-                  <h2 class="advantages__slide-title">Планирование экскурсий</h2>
+                  <div class="advantages__slide-title title">Планирование экскурсий</div>
                   <p class="advantages__slide-description">
                     Подбираются группы на определенную дату с учетом загруженности конкретных экскурсоводов
                   </p>
@@ -501,7 +444,7 @@
                   <i class="fa fa-rocket" aria-hidden="true"></i>
                 </div>
                 <div class="advantages__slide-content">
-                  <h2 class="advantages__slide-title">Отдел продаж</h2>
+                  <div class="advantages__slide-title title">Отдел продаж</div>
                   <p class="advantages__slide-description">
                     Прием online платежей от юридических и физических лиц с выдачей чеков по 54-ФЗ
                   </p>
@@ -515,9 +458,9 @@
                   <i class="fa fa-rocket" aria-hidden="true"></i>
                 </div>
                 <div class="advantages__slide-content">
-                  <h2 class="advantages__slide-title">Рассылки</h2>
-                  <h2 class="advantages__slide-title">Подарочные билеты</h2>
-                  <h2 class="advantages__slide-title">Учет доставки билетов</h2>
+                  <div class="advantages__slide-title title">Рассылки</div>
+                  <div class="advantages__slide-title title">Подарочные билеты</div>
+                  <div class="advantages__slide-title title">Учет доставки билетов</div>
                 </div>
               </div>
             </div>
@@ -747,7 +690,7 @@
                 <a href="" class="articles__slider-link">
                   <img src="./assets/img/articles-images.jpg" alt="">
                   <div class="articles__slide-content">
-                    <h2 class="articles__slide-title">Способы реализации билетов на концерты</h2>
+                    <div class="articles__slide-title title">Способы реализации билетов на концерты</div>
                     <p class="articles__slide-decsription">Достаточно часто остатки билетов продаются по себе стоимости, в результате чего организатор
                       бизнеса лишает себя прибыли. Иногда люди начинают раздавать их бесплатно, чтобы
                       сформировать массовку.</p>
@@ -758,7 +701,7 @@
                 <a href="" class="articles__slider-link">
                   <img src="./assets/img/articles-images.jpg" alt="">
                   <div class="articles__slide-content">
-                    <h2 class="articles__slide-title">С чего начать организацию концерта?</h2>
+                    <div class="articles__slide-title title">С чего начать организацию концерта?</div>
                     <p class="articles__slide-decsription">Музыкальная индустрия претерпевает интересные изменения. С каждым годом она растет всё больше и больше. Постоянно появляются новые музыкальные сервисы, лейблы, артисты и основной заработок последних — концерты. Таким образом, агентство, которое занимается организацией гастролей, концертов и иных мероприятий, — прибыльный и интересный бизнес, но подойдёт он далеко не всем.
                     </p>
                   </div>
@@ -768,7 +711,7 @@
                 <a href="" class="articles__slider-link">
                   <img src="./assets/img/articles-images.jpg" alt="">
                   <div class="articles__slide-content">
-                    <h2 class="articles__slide-title">Продвижение мероприятий посредством комплексной билетной системы</h2>
+                    <div class="articles__slide-title title">Продвижение мероприятий посредством комплексной билетной системы</div>
                     <p class="articles__slide-decsription">
                       Если вы планируете провести концертное мероприятие или спектакль и перед вами стоит задача его продвижения, рекламы и продажи билетов — эта статья для вас! 
                     </p>
@@ -779,7 +722,7 @@
                 <a href="" class="articles__slider-link">
                   <img src="./assets/img/articles-images.jpg" alt="">
                   <div class="articles__slide-content">
-                    <h2 class="articles__slide-title">Начало работы с Пушкинской Картой</h2>
+                    <div class="articles__slide-title title">Начало работы с Пушкинской Картой</div>
                     <p class="articles__slide-decsription">
                       Каждый организатор, какие бы мероприятия он не проводил, задумывается над увеличением продаж билетов. В 2021 году, министерство культуры РФ, совместно с Почта банком, организовали программу “Пушкинская карта” основной целью которой стало, культурное просвещение молодого поколения и  привлечение их в разного рода государственные и бюджетные учреждения, будь то музеи, театры, или выставки. 
                     </p>
@@ -790,7 +733,7 @@
                 <a href="" class="articles__slider-link">
                   <img src="./assets/img/articles-images.jpg" alt="">
                   <div class="articles__slide-content">
-                    <h2 class="articles__slide-title">Краткий гайд о том, как продавать билеты через интернет</h2>
+                    <div class="articles__slide-title title">Краткий гайд о том, как продавать билеты через интернет</div>
                     <p class="articles__slide-decsription">
                       С точки зрения закона, организация мероприятий это оказание услуг. А услуги в России регулируются гражданским кодексом. Чтобы оказать услугу и взять за это деньги, необходимо заключить договор. Помимо договора, при продаже билетов через интернет, организатору потребуются персональные данные участника (электронная почта, телефон, ФИО) — а это попадает под действие закона о персональных данных. 
                     </p>
@@ -801,7 +744,7 @@
                 <a href="" class="articles__slider-link">
                   <img src="./assets/img/articles-images.jpg" alt="">
                   <div class="articles__slide-content">
-                    <h2 class="articles__slide-title">Как эффективно продавать билеты на мероприятия?</h2>
+                    <div class="articles__slide-title title">Как эффективно продавать билеты на мероприятия?</div>
                     <p class="articles__slide-decsription">
                       При реализации билетов на мероприятия нужно учитывать, что большинство клиентов предпочитает покупать их в последний момент. Поэтому 2-3 дня до события обеспечивают основной объем продажи. Как повысить эффективность и привлечь максимальное количество посетителей? 
                     </p>
@@ -827,9 +770,9 @@
             <button class="callback-section__btn-submit" type="submit">Отправить</button>
           </form>
           <div class="callback-section__our-contacts">
-            <h2 class="callback-section__our-contacts-title title">
+            <div class="callback-section__our-contacts-title title">
               Связаться в один клик
-            </h2>
+            </div>
             <a class="callback-section__call-link link" aria-label="нажмите чтобы написать нам в ватс ап" href="https://api.whatsapp.com/send/?phone=79200000000" target="_blank">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="contacts__svg-effect" d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z" fill="#30BF39"/>

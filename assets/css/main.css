@@ -351,6 +351,7 @@ header {
   color: white;
   text-align: center;
   font-size: 42px;
+  font-weight: 600;
 }
 
 .last {
@@ -581,7 +582,7 @@ header {
   background-color: wheat;
 }
 
-.part-content h2 {
+.part-content__title {
   text-align: center;
 }
 
